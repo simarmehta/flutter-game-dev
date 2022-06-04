@@ -1,9 +1,11 @@
-// Copyright 2022, the Flutter project authors. Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
+//now let's add the color that we will need to project
 import 'package:flutter/material.dart';
 
+class MainColor {
+  static Color primaryColor = Color(0xFF00061a);
+  static Color secondaryColor = Color(0xFF001456);
+  static Color accentColor = Color(0xFF4169e8);
+}
 class Palette {
   Color get pen => const Color(0xff1d75fb);
   Color get darkPen => const Color(0xFF0050bc);

@@ -6,6 +6,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:game_template/src/game/gametiles.dart';
 import 'package:go_router/go_router.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
@@ -128,7 +129,7 @@ class MyApp extends StatelessWidget {
             GoRoute(
                 path: 'play',
                 pageBuilder: (context, state) => buildMyTransition(
-                      child: const LevelSelectionScreen(
+                      child: const GameScreen(
                           key: Key('level selection')),
                       color: context.watch<Palette>().backgroundLevelSelection,
                     ),
